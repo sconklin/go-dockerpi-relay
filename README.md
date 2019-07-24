@@ -7,6 +7,7 @@ Golang library to interface to the DockerPi 4 channel relay I2C board
 [![MIT License](http://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 This library written in [Go programming language](https://golang.org/) to control a [DockerPi relay board](https://github.com/geeekpi/dockerpi).
+[Wiki](https://wiki.52pi.com/index.php/DockerPi_4_Channel_Relay_SKU:_EP-0099)
 
 ![image](https://raw.github.com/sconklin/go-dockerpi-relay/master/docs/300px-Ddl-1.jpg)
 ![image](https://raw.github.com/sconklin/go-dockerpi-relay/master/docs/300px-Ddl-2.jpg)
@@ -22,7 +23,7 @@ Golang usage
 
 ```go
 func main() {
-	i2c, err := i2c.NewI2C(0x20, 1)
+	i2c, err := i2c.NewI2C(0x10, 1)
 	checkError(err)
 	defer i2c.Close()
 	rly, err := device.NewRelay(i2c)

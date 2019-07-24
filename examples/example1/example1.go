@@ -16,7 +16,7 @@ func checkError(err error) {
 }
 
 func main() {
-	i2c, err := i2c.NewI2C(0x20, 1)
+	i2c, err := i2c.NewI2C(0x10, 1)
 	checkError(err)
 	defer i2c.Close()
 	rly, err := device.NewRelay(i2c)
