@@ -3,7 +3,7 @@ package relay
 import (
 	"os"
 
-	"github.com/op/go-logging"
+	"github.com/sconklin/go-logging"
 )
 
 // Comment INFO and uncomment DEBUG if you want detail debug output in library.
