@@ -107,7 +107,7 @@ to discover address occupied by peripheral device. To install utility you should
 
 > NOTE 1: Library is not goroutine-safe, so use synchronization approach when multi-gorutine output expected to display in application.
 
-> NOTE 2: If you experience issue with lcd-device stability play with strobe delays in routine `writeDataWithStrobe(data byte)`. Default settings: 200 ms (microseconds) for setting stober, and 30 ms for exposing it to zero. Try to increase them a little bit, if you expirience any malfunction.
+> NOTE 2: If you experience issue with dockerpi-relay stability play with strobe delays in routine `writeDataWithStrobe(data byte)`. Default settings: 200 ms (microseconds) for setting stober, and 30 ms for exposing it to zero. Try to increase them a little bit, if you experience any malfunction.
 
 Credits
 -------
