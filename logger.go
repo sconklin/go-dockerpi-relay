@@ -7,7 +7,7 @@ import (
 )
 
 // Comment INFO and uncomment DEBUG if you want detail debug output in library.
-var log *logging.Logger = buildLogger("relay",
+var logrelay *logging.Logger = buildLogger("relay",
 	// logging.DEBUG,
 	logging.INFO,
 )

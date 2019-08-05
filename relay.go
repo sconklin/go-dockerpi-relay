@@ -22,7 +22,7 @@ func (thisrelay *Relay) On(rnum uint8) error {
 	if (rnum > 4) || (rnum < 1) {
 		return errors.New("Relay number must be in range 1-4")
 	}
-	log.Debug("Turning ON relay %d\n", rnum)
+	logrelay.Debug("Turning ON relay %d\n", rnum)
 	return thisrelay.i2c.WriteRegU8(rnum, 1)
 }
 
@@ -30,6 +30,6 @@ func (thisrelay *Relay) Off(rnum uint8) error {
 	if (rnum > 4) || (rnum < 1) {
 		return errors.New("Relay number must be in range 1-4")
 	}
-	log.Debug("Turning OFF relay %d\n", rnum)
+	logrelay.Debug("Turning OFF relay %d\n", rnum)
 	return thisrelay.i2c.WriteRegU8(rnum, 0)
 }
